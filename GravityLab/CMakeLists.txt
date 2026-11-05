@@ -10,7 +10,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_executable(gravity_lab
-    src/app/main.cpp
+    src/app/main.cpp,
+    src/physics/Vec2.cpp,
+    src/physics/RigidBody.cpp
 )
 
 if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU"

@@ -1,16 +1,18 @@
 #pragma once
 
+#include "Vec2.hpp"
+
 class RigidBody {
-    public:
-        double positionY;
-        double velocityY;
-        double accelerationY;
+public:
+    Vec2 position;
+    Vec2 velocity;
+    Vec2 acceleration;
 
-        RigidBody(
-            double initialPositionY,
-            double initialVelocityY,
-            double initialAccelerationY
-        );
+    RigidBody(
+        Vec2 position,
+        Vec2 velocity,
+        Vec2 acceleration
+    );
 
-        void update(double deltaTime);
+    void update(double deltaTime);
 };
